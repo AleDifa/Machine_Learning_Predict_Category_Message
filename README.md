@@ -43,5 +43,5 @@ plt.title("Category Message")
 plt.show()
 ```
 
-<img width="592" alt="Capture2" src="https://user-images.githubusercontent.com/37181764/112318152-053c4980-8cad-11eb-8de4-1c1adaafdf02.PNG">
+<img width="800" alt="Capture2" src="https://user-images.githubusercontent.com/37181764/112318152-053c4980-8cad-11eb-8de4-1c1adaafdf02.PNG">
 

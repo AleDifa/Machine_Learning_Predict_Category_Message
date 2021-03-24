@@ -28,5 +28,18 @@ df.drop_duplicates(inplace = True)
 ```python
 df["Category"].value_counts().plot(kind="bar")
 # Number of message divided by category spam 653 and ham 4516
+
 ```
-<img width="283" alt="Capture1" src="https://user-images.githubusercontent.com/37181764/112317560-7a5b4f00-8cac-11eb-9c07-349be47d70f0.PNG">
+```python
+import matplotlib.pyplot as plt
+%matplotlib inline
+df["Category"].value_counts().plot(kind="pie", figsize=(5, 5), explode=[0,0.1], autopct = '%1.1f%%' )
+
+# the library Matplotlib is used for visualization, let's see with pie chart how % of Spam and Ham in df 
+# use value_counts().plot for plot the number in Category column
+# autopct = '%1.1f%%'  show the percentage
+plt.legend(["ham","spam"])
+plt.title("Category Message")
+plt.show()
+
+```

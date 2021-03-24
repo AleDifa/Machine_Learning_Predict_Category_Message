@@ -113,3 +113,10 @@ import matplotlib.pyplot as plt
 skplt.metrics.plot_confusion_matrix(y_train, prediction)
 ```
 <img width="800" alt="Capture4" src="https://user-images.githubusercontent.com/37181764/112319663-9364ff80-8cae-11eb-9c9e-5a53bf235c79.PNG">
+
+
+### Conclusione
+-Il mdello ha risposto correttamente 3162 volte per la classe ham ( True Positive).
+-5 email di spam sono ritenute valide (False Negative).
+-16 volte il modello ha sbagliato nel predirre la classe (False Positive) ritenendo erroneamente si trattatasse di spam.
+-prevedenedo invece bene 434 messaggi di spam(True Negative).

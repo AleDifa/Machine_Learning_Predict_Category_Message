@@ -71,3 +71,26 @@ y=df["Category"]
 # split into 80% training and 30% testing
 X_train,X_test,y_train,y_test = train_test_split(Vect_df,y, test_size = 0.3, random_state = 10)
 ```
+
+### Costruzione di un modello Naive Bayes¶
+```python
+from sklearn.naive_bayes import MultinomialNB
+
+classifier = MultinomialNB()
+#istance of our model
+
+classifier.fit(X_train,y_train)
+#fit the model to our dataset
+#adesso la variabile classifier contiene il nostro modello addestrato. La fase di addestramento del modello prevede il calcolo della funzione di probabilità.
+```
+
+### Valutazioni
+Usiamo la accuracy_score e la confusion_matrix per valutare il comportamento del nostro modello di Naive Bayes
+
+```python
+from sklearn.metrics import classification_report
+
+prediction = classifier.predict(X_train)
+print (classification_report(y_train, prediction))
+```
+

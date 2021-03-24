@@ -95,3 +95,21 @@ print (classification_report(y_train, prediction))
 ```
 
 <img width="650" alt="Capture3" src="https://user-images.githubusercontent.com/37181764/112319024-f1451780-8cad-11eb-9e49-fbd2d16d461e.PNG">
+
+```python
+from sklearn.metrics import accuracy_score
+accuracy_score(y_train, prediction)
+```
+0.9941940834946088
+Il modello risponde correttamente nel 99% dei casi
+
+
+
+Per saperne di più sugli errori del modello posso utilizzare anche la matrice di confusione (confusion matrix).
+
+```python
+import scikitplot as skplt
+import matplotlib.pyplot as plt
+skplt.metrics.plot_confusion_matrix(y_train, prediction)
+```
+

@@ -72,7 +72,7 @@ y=df["Category"]
 X_train,X_test,y_train,y_test = train_test_split(Vect_df,y, test_size = 0.3, random_state = 10)
 ```
 
-### Costruzione di un modello Naive Bayes¶
+### Costruzione di un modello Naive Bayes
 ```python
 from sklearn.naive_bayes import MultinomialNB
 
@@ -94,3 +94,4 @@ prediction = classifier.predict(X_train)
 print (classification_report(y_train, prediction))
 ```
 
+<img width="650" alt="Capture3" src="https://user-images.githubusercontent.com/37181764/112319024-f1451780-8cad-11eb-9e49-fbd2d16d461e.PNG">

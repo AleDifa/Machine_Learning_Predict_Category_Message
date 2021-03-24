@@ -29,3 +29,4 @@ df.drop_duplicates(inplace = True)
 df["Category"].value_counts().plot(kind="bar")
 # Number of message divided by category spam 653 and ham 4516
 ```
+<img width="283" alt="Capture1" src="https://user-images.githubusercontent.com/37181764/112317560-7a5b4f00-8cac-11eb-9c07-349be47d70f0.PNG">

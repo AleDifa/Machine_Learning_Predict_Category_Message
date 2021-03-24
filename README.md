@@ -112,4 +112,4 @@ import scikitplot as skplt
 import matplotlib.pyplot as plt
 skplt.metrics.plot_confusion_matrix(y_train, prediction)
 ```
-
+<img width="800" alt="Capture4" src="https://user-images.githubusercontent.com/37181764/112319663-9364ff80-8cae-11eb-9c9e-5a53bf235c79.PNG">

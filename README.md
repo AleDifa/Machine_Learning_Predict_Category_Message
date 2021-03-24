@@ -41,5 +41,7 @@ df["Category"].value_counts().plot(kind="pie", figsize=(5, 5), explode=[0,0.1], 
 plt.legend(["ham","spam"])
 plt.title("Category Message")
 plt.show()
-
 ```
+
+<img width="592" alt="Capture2" src="https://user-images.githubusercontent.com/37181764/112318152-053c4980-8cad-11eb-8de4-1c1adaafdf02.PNG">
+

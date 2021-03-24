@@ -45,3 +45,29 @@ plt.show()
 
 <img width="800" alt="Capture2" src="https://user-images.githubusercontent.com/37181764/112318152-053c4980-8cad-11eb-8de4-1c1adaafdf02.PNG">
 
+### Machine Learning Models
+Nei modelli di machine learning è prassi comune convertire le variabili categoriche, ad esempio testo, nella loro rappresentazione numerica.
+Convertiamo con CountVectorizer il testo di ogni messaggio in una rappresentazione numerica:
+
+1)Create an instance of the CountVectorizer class.
+2)Call the fit() function in order to learn a vocabulary from one or more documents.
+3)Call the transform() function on one or more documents as needed to encode each as a vector.
+
+```python
+from sklearn.feature_extraction.text import CountVectorizer
+
+vectorizer = CountVectorizer()
+Vect_df= vectorizer.fit_transform(df["Message"])
+```
+
+```python
+from sklearn.model_selection import train_test_split
+
+# X= Vect_df
+y=df["Category"]
+#impostiamo i dati di X e y, stiamo cercando di trovare un associazione fra la category
+#spam or Ham ed il testo dei messaggi.
+
+# split into 80% training and 30% testing
+X_train,X_test,y_train,y_test = train_test_split(Vect_df,y, test_size = 0.3, random_state = 10)
+```

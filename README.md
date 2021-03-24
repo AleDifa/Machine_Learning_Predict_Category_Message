@@ -1,15 +1,15 @@
 # Predictive analysis using the Naive Bayes classifier 
-This simple program can predict if text is Spam or normal text message 
+This simple program can predict if text is Spam or normal text message <br>
 Il compito di questo progetto è realizzare un modello di Machine Learning in grado di prevedere se un messaggio è SPAM o Ham(“E-mail that is generally desired and isn't considered spam.”).
 
-Il set di dati per questo caso di studio può essere trovato su Kaggle.
-I dati Consistono in 5574 messaggi di testo in inglese.
+Il set di dati per questo caso di studio può essere trovato su Kaggle.<br>
+I dati Consistono in 5574 messaggi di testo in inglese.<br>
 
-Di seguito la struttura del Notebook:
--Analisi dei dati e pulizia
--Visualizzazioni
--Modellazione Algoritmo
--Conclusione
+Di seguito la struttura del Notebook:<br>
+-Analisi dei dati e pulizia<br>
+-Visualizzazioni<br>
+-Modellazione Algoritmo<br>
+-Conclusione<br>
 
 ```python
 df=pd.read_csv("C:/Users/Alessandro/Desktop/spam.csv", encoding="latin-1")

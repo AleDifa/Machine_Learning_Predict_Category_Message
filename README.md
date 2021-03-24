@@ -17,3 +17,15 @@ df=pd.read_csv("C:/Users/Alessandro/Desktop/spam.csv", encoding="latin-1")
 ```
 <img width="237" alt="Capture" src="https://user-images.githubusercontent.com/37181764/112315908-e472f480-8caa-11eb-9add-f74f6a14d8b9.PNG">
 
+```python
+df.rename({"v1":"Category", "v2":"Message"}, axis=1, inplace=True)
+df.drop_duplicates(inplace = True)
+#Checking for duplicates and removing them
+```
+
+### Visualization
+
+```python
+df["Category"].value_counts().plot(kind="bar")
+# Number of message divided by category spam 653 and ham 4516
+```

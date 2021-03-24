@@ -15,7 +15,7 @@ Di seguito la struttura del Notebook:
 df=pd.read_csv("C:/Users/Alessandro/Desktop/spam.csv", encoding="latin-1")
 # open the file in Desktop named spam.csv, encoding some unreadable characters
 ```
-<img width="237" alt="Capture" src="https://user-images.githubusercontent.com/37181764/112315908-e472f480-8caa-11eb-9add-f74f6a14d8b9.PNG">
+<img width="400" alt="Capture" src="https://user-images.githubusercontent.com/37181764/112315908-e472f480-8caa-11eb-9add-f74f6a14d8b9.PNG">
 
 ```python
 df.rename({"v1":"Category", "v2":"Message"}, axis=1, inplace=True)
